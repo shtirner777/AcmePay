@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{88E5B3B2-5F19-47C0-970A-2438874ED2BE}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcmePay.Api", "src\AcmePay.Api\AcmePay.Api.csproj", "{87917B38-1938-4687-92DC-2577D8FCA3C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcmePay.Application", "src\AcmePay.Application\AcmePay.Application.csproj", "{B86239F9-5999-407D-B6ED-DC6BB7A5F8BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcmePay.Core", "src\AcmePay.Core\AcmePay.Core.csproj", "{333E13AF-4D53-48AE-A7E0-378AF352D2EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcmePay.Infrastructure", "src\AcmePay.Infrastructure\AcmePay.Infrastructure.csproj", "{8E0640C9-93D4-41A9-AAE0-66C459F4F42F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcmePay.Common", "src\AcmePay.Common\AcmePay.Common.csproj", "{7EDC8A29-D82B-4BFD-96E4-8D79C20F0322}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcmePay.UnitTests", "tests\AcmePay.UnitTests\AcmePay.UnitTests.csproj", "{B6F4A1B7-04FE-4323-BCE8-BE68E0B6161C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcmePay.IntegrationTests", "tests\AcmePay.IntegrationTests\AcmePay.IntegrationTests.csproj", "{99FE6FBB-6288-42B5-B3C1-383C3E5C0551}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AcmePay", "AcmePay", "{5E8A5DBD-11B9-43C0-9FB1-D2BE429C5707}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{17930A66-FD63-4065-916C-E1ACDFDC62BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87917B38-1938-4687-92DC-2577D8FCA3C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87917B38-1938-4687-92DC-2577D8FCA3C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87917B38-1938-4687-92DC-2577D8FCA3C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87917B38-1938-4687-92DC-2577D8FCA3C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B86239F9-5999-407D-B6ED-DC6BB7A5F8BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B86239F9-5999-407D-B6ED-DC6BB7A5F8BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B86239F9-5999-407D-B6ED-DC6BB7A5F8BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B86239F9-5999-407D-B6ED-DC6BB7A5F8BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{333E13AF-4D53-48AE-A7E0-378AF352D2EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{333E13AF-4D53-48AE-A7E0-378AF352D2EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{333E13AF-4D53-48AE-A7E0-378AF352D2EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{333E13AF-4D53-48AE-A7E0-378AF352D2EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E0640C9-93D4-41A9-AAE0-66C459F4F42F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E0640C9-93D4-41A9-AAE0-66C459F4F42F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E0640C9-93D4-41A9-AAE0-66C459F4F42F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E0640C9-93D4-41A9-AAE0-66C459F4F42F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EDC8A29-D82B-4BFD-96E4-8D79C20F0322}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EDC8A29-D82B-4BFD-96E4-8D79C20F0322}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EDC8A29-D82B-4BFD-96E4-8D79C20F0322}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EDC8A29-D82B-4BFD-96E4-8D79C20F0322}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6F4A1B7-04FE-4323-BCE8-BE68E0B6161C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6F4A1B7-04FE-4323-BCE8-BE68E0B6161C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6F4A1B7-04FE-4323-BCE8-BE68E0B6161C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6F4A1B7-04FE-4323-BCE8-BE68E0B6161C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99FE6FBB-6288-42B5-B3C1-383C3E5C0551}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99FE6FBB-6288-42B5-B3C1-383C3E5C0551}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99FE6FBB-6288-42B5-B3C1-383C3E5C0551}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99FE6FBB-6288-42B5-B3C1-383C3E5C0551}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{333E13AF-4D53-48AE-A7E0-378AF352D2EE} = {5E8A5DBD-11B9-43C0-9FB1-D2BE429C5707}
+		{7EDC8A29-D82B-4BFD-96E4-8D79C20F0322} = {5E8A5DBD-11B9-43C0-9FB1-D2BE429C5707}
+		{87917B38-1938-4687-92DC-2577D8FCA3C0} = {5E8A5DBD-11B9-43C0-9FB1-D2BE429C5707}
+		{8E0640C9-93D4-41A9-AAE0-66C459F4F42F} = {5E8A5DBD-11B9-43C0-9FB1-D2BE429C5707}
+		{B86239F9-5999-407D-B6ED-DC6BB7A5F8BF} = {5E8A5DBD-11B9-43C0-9FB1-D2BE429C5707}
+		{99FE6FBB-6288-42B5-B3C1-383C3E5C0551} = {17930A66-FD63-4065-916C-E1ACDFDC62BD}
+		{B6F4A1B7-04FE-4323-BCE8-BE68E0B6161C} = {17930A66-FD63-4065-916C-E1ACDFDC62BD}
+	EndGlobalSection
+EndGlobal

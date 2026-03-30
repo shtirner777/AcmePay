@@ -1,0 +1,48 @@
+@AcmePay_Host = http://localhost:5000
+@MerchantId = merchant-001
+@PaymentId = 11111111-1111-1111-1111-111111111111
+
+### Authorize payment
+POST {{AcmePay_Host}}/api/merchants/{{MerchantId}}/payments/authorize
+Idempotency-Key: auth-001
+X-Correlation-Id: corr-001
+X-Triggered-By: merchant-checkout-service
+Content-Type: application/json
+
+{
+  "amount": 125.50,
+  "currency": "EUR",
+  "cardholderName": "John Doe",
+  "pan": "4111111111111111",
+  "expiryMonth": 12,
+  "expiryYear": 2030,
+  "cvv": "123"
+}
+
+### Capture payment
+POST {{AcmePay_Host}}/api/merchants/{{MerchantId}}/payments/{{PaymentId}}/capture
+Idempotency-Key: cap-001
+X-Correlation-Id: corr-002
+X-Triggered-By: merchant-ops-service
+Content-Type: application/json
+
+{
+  "amount": 100.00
+}
+
+### Void payment
+POST {{AcmePay_Host}}/api/merchants/{{MerchantId}}/payments/{{PaymentId}}/void
+Idempotency-Key: void-001
+X-Correlation-Id: corr-003
+X-Triggered-By: merchant-ops-service
+
+### Refund payment
+POST {{AcmePay_Host}}/api/merchants/{{MerchantId}}/payments/{{PaymentId}}/refund
+Idempotency-Key: refund-001
+X-Correlation-Id: corr-004
+X-Triggered-By: customer-support-service
+Content-Type: application/json
+
+{
+  "amount": 25.00
+}

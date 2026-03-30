@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: acmepay-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: acmepay
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - acmepay-postgres-data:/var/lib/postgresql/data
+      - ./src/AcmePay.Infrastructure/Persistence/Sql/Schema/V001__Initial.sql:/docker-entrypoint-initdb.d/001-init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d acmepay"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  acmepay-postgres-data:

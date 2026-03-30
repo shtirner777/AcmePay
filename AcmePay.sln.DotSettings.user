@@ -1,0 +1,7 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2bb6b8fd_002Dbcee_002D4ce5_002Da316_002D06c22fbb4422/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from &amp;lt;Tests&amp;gt;\&amp;lt;AcmePay.IntegrationTests&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;Project Location="C:\Projects\test projects\AcmePay\AcmePay 5 full refact\tests\AcmePay.IntegrationTests" Presentation="&amp;lt;Tests&amp;gt;\&amp;lt;AcmePay.IntegrationTests&amp;gt;" /&gt;&#xD;
+    &lt;Project Location="C:\Projects\test projects\AcmePay\AcmePay 5 full refact\tests\AcmePay.UnitTests" Presentation="&amp;lt;Tests&amp;gt;\&amp;lt;AcmePay.UnitTests&amp;gt;" /&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
